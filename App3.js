@@ -202,3 +202,27 @@ function App() {
 }
 
 export default App;
+---------------------------------------------------------------------
+import React, { useState } from 'react';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={() => setCount(count + 1)}>Increment</button>
+    </div>
+  );
+}
+
+function App() {
+  return (
+    <div>
+      <Counter />
+    </div>
+  );
+}
+
+export default App;
+  
